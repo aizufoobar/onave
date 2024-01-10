@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div id="top"></div>
 
-## Getting Started
+## 使用技術一覧
 
-First, run the development server:
+<!-- シールド一覧 -->
+<p style="display: inline">
+  <!-- フレームワーク -->
+  <img src="https://img.shields.io/badge/-Next.js-000000.svg?logo=next.js&style=for-the-badge">
+  <!-- 言語 -->
+  <img src="https://img.shields.io/badge/-Typescript-black.svg?logo=typescript&style=for-the-badge">
+  <!-- インフラ -->
+  <img src="https://img.shields.io/badge/-Google%20cloud-black.svg?logo=google-cloud&style=for-the-badge">
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 目次
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. [プロジェクトについて](#プロジェクトについて)
+2. [環境](#環境)
+3. [ディレクトリ構成](#ディレクトリ構成)
+<!-- 4. [開発環境構築](#開発環境構築)
+5. [トラブルシューティング](#トラブルシューティング) -->
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- プロジェクト名を記載 -->
 
-## Learn More
+## プロジェクト名
 
-To learn more about Next.js, take a look at the following resources:
+Onave
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- プロジェクトについて -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## プロジェクトについて
 
-## Deploy on Vercel
+2ch、Reddit、Twitterのような投稿サイトにする予定で開発中のWEBアプリケーション
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- プロジェクトの概要を記載 -->
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <p align="left">
+    <!-- <br /> -->
+    <!-- プロジェクト詳細にBacklogのWikiのリンク -->
+    <!-- <a href="Backlogのwikiリンク"><strong>プロジェクト詳細 »</strong></a>
+    <br />
+    <br /> -->
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
+
+## 環境
+
+<!-- 言語、フレームワーク、ミドルウェア、インフラの一覧とバージョンを記載 -->
+
+| 言語・フレームワーク  | バージョン |
+| --------------------- | ---------- |
+| Next.js               | 14.0.4     |
+| React                 | 18.2.0     |
+| Node.js               | 20.10.6    |
+| Typescript            | 5.3.3      |
+
+その他のパッケージのバージョンは pyproject.toml と package.json を参照してください
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
+
+## ディレクトリ構成
+
+<!-- Treeコマンドを使ってディレクトリ構成を記載 -->
+
+雛形をデプロイする段階になったら記述します。
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
+
+<!-- ## 開発環境構築 -->
+
+<!-- ## トラブルシューティング -->
