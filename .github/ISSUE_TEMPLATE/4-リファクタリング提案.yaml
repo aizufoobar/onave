@@ -1,0 +1,25 @@
+name: 4-リファクタリング提案
+description: 挙動の変化を伴わない内部構造の修正に関する提案
+title: 【再設計】
+labels: ['Type: refactoring']
+
+body:
+  - type: textarea
+    attributes:
+      label: 目的
+      description: 提案目的を記入してください。
+      placeholder: 例：金閣の追求。
+
+  - type: textarea
+    attributes:
+      label: 提案詳細
+      description: タイトルに含まれない提案内容があれば記入してください。
+      placeholder: '例：Issue #10の修正に伴い、◯◯.config.jsを削除可能になった。'
+
+  - type: textarea
+    attributes:
+      label: その他
+      description: |
+        関連するIssueや参考資料へのリンクなど何でも記入してください。
+
+        Tips: Ctrl+Vやドラッグ&ドロップでスクリーンショットを挿入できます。

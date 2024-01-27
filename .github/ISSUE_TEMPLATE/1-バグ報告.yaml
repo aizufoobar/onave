@@ -1,0 +1,42 @@
+name: 1-バグ報告
+description: 不具合に関する報告
+title: 【バグ】
+labels: ['Type: bug']
+
+body:
+  - type: textarea
+    attributes:
+      label: 現状
+      description: 不具合の概要を記入してください。タイトルと重複しても構いません。
+      placeholder: 例：ログインしたユーザー名がヘッダーに表示されない。
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ***
+        以下項目の記入は任意です。
+
+  - type: textarea
+    attributes:
+      label: 期待される動作
+      description: 期待される動作を記入してください。
+      placeholder: 例：ログイン後、ヘッダーにユーザー名が表示される。
+
+  - type: textarea
+    attributes:
+      label: 再現手順
+      description: 必要そうなら記入してください。
+      placeholder: |
+        1. ～に遷移する。
+        2. ～をクリックする。
+        3. ～が〇〇に表示されない。
+
+  - type: textarea
+    attributes:
+      label: その他
+      description: |
+        バグに関する意見、予想される原因、関連するIssueや参考資料へのリンクなど何でも記入してください。
+
+        Tips: Ctrl+Vやドラッグ＆ドロップでスクリーンショットを挿入できます。
