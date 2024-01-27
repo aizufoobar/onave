@@ -70,12 +70,9 @@ body:
         - Microsoft Edge
         
   - type: textarea
-    id: logs
     attributes:
-      label: Relevant log output
-      description: 関連するログの出力をコピーしてペーストしてください。 これは自動的にコードにフォーマットされるので、バックティックは不要です。
-      render: shell
-  - type: textarea
-    id: other
-    attributes:
-      label: その他(other)
+      label: その他
+      description: |
+        予想される原因、バグ修正のメリット・デメリット、関連するIssueや外部情報へのリンクなど何でも記述してください。
+
+        Tips: Ctrl+Vやドラッグ＆ドロップでスクリーンショットを挿入できます。
