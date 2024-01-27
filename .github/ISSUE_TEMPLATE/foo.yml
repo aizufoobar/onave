@@ -1,12 +1,15 @@
 name: 不具合報告(Bug report)
 description: File a bug report
-title: "[Bug]: "
+title: [Bug]
 labels: ["bug"]
 body:
-  - type: markdown
+  - type: textarea
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      label: 概要
+      description: バグの概要を記述してください。タイトルと重複可。
+      placeholder: 例：ユーザー名「三島」でログインした場合、ユーザー名がトップページのヘッダーに表示されない。
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
