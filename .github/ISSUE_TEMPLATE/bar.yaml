@@ -1,4 +1,4 @@
-name: ex4-バグ報告
+name: ex5-バグ報告
 description: 不具合に関する報告
 title: 【バグ】
 labels: ['Type: bug']
@@ -15,11 +15,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        **HUBBERS!!** This is the github/docs open source repo. You may want to open an issue in the internal-only github/docs-content repo instead.
-
-        * For questions, ask in [Discussions](https://github.com/github/docs/discussions).
-        * Before you file an issue read the [Contributing guide](https://docs.github.com/en/contributing).
-        * Check to make sure someone hasn't already opened a similar [issue](https://github.com/github/docs/issues).
+        ***
+        以下項目の記入は任意です。
 
   - type: textarea
     attributes:
