@@ -1,5 +1,6 @@
-name: example
-description: ex-description
+name: ex1-バグ報告
+description: 不具合に関する報告
+title: 【バグ】
 labels: ['Type: bug']
 
 body:
