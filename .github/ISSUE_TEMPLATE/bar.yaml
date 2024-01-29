@@ -1,4 +1,4 @@
-name: ex1-バグ報告
+name: ex4-バグ報告
 description: 不具合に関する報告
 title: 【バグ】
 labels: ['Type: bug']
@@ -6,8 +6,9 @@ labels: ['Type: bug']
 body:
   - type: textarea
     attributes:
-      label: What article on docs.github.com is affected?
-      description: Please link to the article you'd like to see updated.
+      label: 現状
+      description: 不具合の概要を記入してください。タイトルと重複しても構いません。
+      placeholder: 例：ログインしたユーザー名がヘッダーに表示されない。
     validations:
       required: true
 
