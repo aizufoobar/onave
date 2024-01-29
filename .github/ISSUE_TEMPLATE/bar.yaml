@@ -1,4 +1,4 @@
-name: ex7-バグ報告
+name: ex8-バグ報告
 description: 不具合に関する報告
 title: 【バグ】
 labels: ['Type: bug']
@@ -32,3 +32,11 @@ body:
         1. ～に遷移する。
         2. ～をクリックする。
         3. ～が〇〇に表示されない。
+
+  - type: textarea
+    attributes:
+      label: その他
+      description: |
+        バグに関する意見、予想される原因、関連するIssueや参考資料へのリンクなど何でも記入してください。
+
+        Tips: Ctrl+Vやドラッグ＆ドロップでスクリーンショットを挿入できます。
