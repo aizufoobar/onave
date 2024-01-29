@@ -9,7 +9,8 @@ body:
       value: |
         ***
         #### テンプレートの説明
-        タイトルは、「【バグ】◯◯が△△できない」のように概要を示してください。
+        タイトルは、『【バグ】◯◯が△△できない』のように **概要を示して** ください。
+        必須項目は、 **バグ内容** です。
         気楽にIssueを書きましょう！
         ***
 
@@ -17,20 +18,19 @@ body:
     attributes:
       label: バグ内容
       description: タイトルと重複しても構いません。
-      placeholder: ログインしたユーザー名がヘッダーに表示されない。等
+      placeholder: ログインしたユーザー名がヘッダーに表示されない...等
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
-        ***
-        以下は任意です。
+        ！！以下は任意です！！
 
   - type: textarea
     attributes:
       label: 期待される動作
-      placeholder: ログイン後、ヘッダーにユーザー名が表示される。等
+      placeholder: ログイン後、ヘッダーにユーザー名が表示される...等
 
   - type: textarea
     attributes:

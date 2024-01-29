@@ -1,33 +1,41 @@
-name: 2-機能提案
+name: b-機能提案
 description: 機能の実装・修正に関する提案
 title: 【機能】
 labels: ['Type: feature']
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ***
+        #### テンプレートの説明
+        タイトルは、「【機能】◯◯に△△を実装する」のように概要を示してください。
+        必須項目は、 **目的** です。
+        気楽にIssueを書きましょう！
+        ***
+
   - type: textarea
     attributes:
-      label: 目的
-      description: 提案目的を記入してください。
-      placeholder: 例：メインコンテンツとして。
+      label: 提案目的
+      description: 簡易で構いません。
+      placeholder: メインコンテンツとして...等
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
-        ***
-        以下項目の記入は任意です。
+        ！！以下は任意です！！
 
   - type: textarea
     attributes:
       label: 提案詳細
       description: タイトルに含まれない提案内容があれば記入してください。
-      placeholder: 例：〇〇要素が△△状態になったとき、✕✕動作をするようにする。
+      placeholder: 〇〇要素が△△状態になったとき、✕✕動作をするようにする...等
 
   - type: textarea
     attributes:
       label: メリット・デメリット
-      description: 必要そうなら記入してください。
       placeholder: |
         メリット
         ・ユーザーエクスペリエンスの向上
@@ -40,5 +48,4 @@ body:
       label: その他
       description: |
         関連するIssueや参考資料へのリンクなど何でも記入してください。
-
-        Tips: Ctrl+Vやドラッグ&ドロップでスクリーンショットを挿入できます。
+         Ctrl+Vやドラッグ&ドロップでスクリーンショットを挿入できます。
