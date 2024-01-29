@@ -1,14 +1,22 @@
-name: 1-バグ報告
+name: a-バグ報告
 description: 不具合に関する報告
 title: 【バグ】
 labels: ['Type: bug']
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ***
+        タイトルは、「【バグ】◯◯が△△できない」のように概要を示してください。
+        気楽にIssueを書きましょう！
+        ***
+
   - type: textarea
     attributes:
-      label: 現状
-      description: 不具合の概要を記入してください。タイトルと重複しても構いません。
-      placeholder: 例：ログインしたユーザー名がヘッダーに表示されない。
+      label: バグ内容
+      description: タイトルと重複しても構いません。
+      placeholder: ログインしたユーザー名がヘッダーに表示されない。等
     validations:
       required: true
 
@@ -16,22 +24,20 @@ body:
     attributes:
       value: |
         ***
-        以下項目の記入は任意です。
+        以下は任意です。
 
   - type: textarea
     attributes:
       label: 期待される動作
-      description: 期待される動作を記入してください。
-      placeholder: 例：ログイン後、ヘッダーにユーザー名が表示される。
+      placeholder: ログイン後、ヘッダーにユーザー名が表示される。等
 
   - type: textarea
     attributes:
       label: 再現手順
-      description: 必要そうなら記入してください。
       placeholder: |
-        1. ～に遷移する。
-        2. ～をクリックする。
-        3. ～が〇〇に表示されない。
+        1. 
+        2. 
+        3. 
 
   - type: textarea
     attributes:
