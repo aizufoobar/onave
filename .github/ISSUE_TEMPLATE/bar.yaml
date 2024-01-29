@@ -1,4 +1,4 @@
-name: ex5-バグ報告
+name: ex6-バグ報告
 description: 不具合に関する報告
 title: 【バグ】
 labels: ['Type: bug']
@@ -20,11 +20,9 @@ body:
 
   - type: textarea
     attributes:
-      label: What part(s) of the article would you like to see updated?
-      description: |
-        - Give as much detail as you can to help us understand the change you want to see. 
-        - Why should the docs be changed? What use cases does it support? 
-        - What is the expected outcome or behavior?
+      label: 期待される動作
+      description: 期待される動作を記入してください。
+      placeholder: 例：ログイン後、ヘッダーにユーザー名が表示される。
 
   - type: textarea
     attributes:
