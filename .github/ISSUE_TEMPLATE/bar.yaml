@@ -1,4 +1,4 @@
-name: ex6-バグ報告
+name: ex7-バグ報告
 description: 不具合に関する報告
 title: 【バグ】
 labels: ['Type: bug']
@@ -26,7 +26,9 @@ body:
 
   - type: textarea
     attributes:
-      label: Additional information
-      description: |
-        - Are you able to reliably reproduce the problem? How often does it occur? How many users are affected?
-        - Add any other context or screenshots about the feature here.
+      label: 再現手順
+      description: 必要そうなら記入してください。
+      placeholder: |
+        1. ～に遷移する。
+        2. ～をクリックする。
+        3. ～が〇〇に表示されない。
