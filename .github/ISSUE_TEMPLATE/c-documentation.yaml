@@ -9,8 +9,7 @@ body:
       value: |
         ***
         #### テンプレートの説明
-        タイトルは、「【文書】◯◯に関するドキュメントを作成する」のように概要を示してください。
-        必須項目は、 **目的** です。
+        タイトルは、「◯◯に関するドキュメントを作成する」のように **概要を示して** ください。
         気楽にIssueを書きましょう！
         ***
 
@@ -21,11 +20,6 @@ body:
       placeholder: 新規共同編集者に参入手順を説明するため...等
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ！！以下は任意です！！
 
   - type: textarea
     attributes:
