@@ -1,0 +1,45 @@
+name: c-文書提案
+description: 文書の作成・修正に関する提案
+title: 【文書】
+labels: ['Type: documentation']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ***
+        #### テンプレートの説明
+        タイトルは、「◯◯に関するドキュメントを作成する」のように **概要を示して** ください。
+        気楽にIssueを書きましょう！
+        ***
+
+  - type: textarea
+    attributes:
+      label: 提案目的
+      description: 簡易で構いません。
+      placeholder: 新規共同編集者に参入手順を説明するため...等
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 提案詳細
+      description: タイトルに含まれない提案内容があれば記入してください。
+      placeholder: ◯◯.mdをdocs内に作成する...等
+
+  - type: textarea
+    attributes:
+      label: メリット・デメリット
+      placeholder: |
+        メリット
+        ・参入障壁の低下
+        
+        デメリット
+        ・ドキュメント管理の手間が増える
+
+  - type: textarea
+    attributes:
+      label: その他
+      description: |
+        関連するIssueや参考資料へのリンクなど何でも記入してください。
+        Ctrl+Vやドラッグ&ドロップでスクリーンショットを挿入できます。

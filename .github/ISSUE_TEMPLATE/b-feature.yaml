@@ -1,0 +1,45 @@
+name: b-機能提案
+description: 機能の実装・修正に関する提案
+title: 【機能】
+labels: ['Type: feature']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ***
+        #### テンプレートの説明
+        タイトルは、『◯◯に△△を実装する』のように **概要を示して** ください。
+        気楽にIssueを書きましょう！
+        ***
+
+  - type: textarea
+    attributes:
+      label: 提案目的
+      description: 簡易で構いません。
+      placeholder: メインコンテンツとして...等
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 提案詳細
+      description: タイトルに含まれない提案内容があれば記入してください。
+      placeholder: 〇〇要素が△△状態になったとき、✕✕動作をするようにする...等
+
+  - type: textarea
+    attributes:
+      label: メリット・デメリット
+      placeholder: |
+        メリット
+        ・ユーザーエクスペリエンスの向上
+        
+        デメリット
+        ・サーバー負荷の増大
+
+  - type: textarea
+    attributes:
+      label: その他
+      description: |
+        関連するIssueや参考資料へのリンクなど何でも記入してください。
+         Ctrl+Vやドラッグ&ドロップでスクリーンショットを挿入できます。
