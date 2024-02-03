@@ -69,18 +69,17 @@
 
 ## 開発環境構築
 
-リポジトリの複製  
+- リポジトリの複製  
 `git clone https://github.com/aizufoobar/onave.git`
 
-Volta のインストール  
+- Volta のインストール  
 `curl https://get.volta.sh | bash`  
 
-Node, npm の確認  
+- Node, npm の確認（package.json の "volta" に書かれたバージョンと一致するか）  
 `node --version`
-`npm --version`  
--> package.json の "volta" に書かれたバージョンと一致することを確認
+`npm --version`
 
-依存パッケージのインストール  
+- 依存パッケージのインストール  
 `npm install`
 
 #### その他
