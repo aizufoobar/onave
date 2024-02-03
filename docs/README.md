@@ -1,72 +1,102 @@
 <div id="top"></div>
 
-## 使用技術一覧
-
-<!-- シールド一覧 -->
-<p style="display: inline">
-  <!-- フレームワーク -->
-  <img src="https://img.shields.io/badge/-Next.js-000000.svg?logo=next.js&style=for-the-badge">
-  <!-- 言語 -->
-  <img src="https://img.shields.io/badge/-Typescript-black.svg?logo=typescript&style=for-the-badge">
-  <!-- インフラ -->
-  <img src="https://img.shields.io/badge/-Google%20cloud-black.svg?logo=google-cloud&style=for-the-badge">
-</p>
+> [!TIP]
+> 新規共同開発者は、[#構成](#構成)および[#開発環境構築](#開発環境構築)を確認してください。
 
 ## 目次
 
 1. [プロジェクトについて](#プロジェクトについて)
 2. [環境](#環境)
-3. [ディレクトリ構成](#ディレクトリ構成)
-<!-- 4. [開発環境構築](#開発環境構築)
-5. [トラブルシューティング](#トラブルシューティング) -->
+3. [構成](#構成)
+4. [開発環境構築](#開発環境構築)
+5. [トラブルシューティング](#トラブルシューティング)
 
-
-<!-- プロジェクト名を記載 -->
-
-## プロジェクト名
-
-Onave
-
-<!-- プロジェクトについて -->
+</br>
 
 ## プロジェクトについて
 
-2ch、Reddit、Twitterのような投稿サイトにする予定で開発中のWEBアプリケーション
+掲示板Webアプリ（身内制作で目標は特にありません）
 
-<!-- プロジェクトの概要を記載 -->
-
-  <p align="left">
-    <!-- <br /> -->
-    <!-- プロジェクト詳細にBacklogのWikiのリンク -->
-    <!-- <a href="Backlogのwikiリンク"><strong>プロジェクト詳細 »</strong></a>
-    <br />
-    <br /> -->
+<a href="https://github.com/aizufoobar/onave/wiki">プロジェクト詳細 »</a>
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
+
 
 ## 環境
 
-<!-- 言語、フレームワーク、ミドルウェア、インフラの一覧とバージョンを記載 -->
+<p>
+  <img src="https://img.shields.io/badge/-Next.js-000000.svg?logo=next.js&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-Typescript-black.svg?logo=typescript&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-App%20Engine-000000.svg?logo=google-cloud&style=for-the-badge">
+</p>
 
-| 言語・フレームワーク  | バージョン |
-| --------------------- | ---------- |
-| Next.js               | 14.0.4     |
-| React                 | 18.2.0     |
-| Node.js               | 20.10.6    |
-| Typescript            | 5.3.3      |
-
-その他のパッケージのバージョンは pyproject.toml と package.json を参照してください
+パッケージのバージョンは package.json を参照してください
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
-## ディレクトリ構成
 
-<!-- Treeコマンドを使ってディレクトリ構成を記載 -->
+## 構成
 
-雛形をデプロイする段階になったら記述します。
+`docs`には、READMEなどのドキュメントを配置します。`public`には、静的ファイル（画像など）を配置します。静的ファイルを除くアプリの「中身」は`src`内に作成し、`app`には実際の画面を構成する page.tsx など、`components`には共通コンポーネント（画面の構成要素）、`lib`には共通ロジックを配置します。
+
+ルートには各種設定ファイルが配置されます。 app.yaml はApp Engineの構成ファイルで、 cloudbuild.yaml はCloud Buildの構成ファイルです。本アプリはこの2つの構成ファイルに従い、本番・ステージング環境に展開されます。
+
+<!-- tree -a -I ".git|.next|node_modules|next-env.d.ts" -L 2 --dirsfirst -->
+<pre>
+.
+├──.github
+├──.vscode
+├── <span style="color: yellow;">docs</span>
+├── <span style="color: yellow;">public</span>
+├── <span style="color: yellow;">src</span>
+│   ├── app
+│   ├── components
+│   └── lib
+│
+├── .eslintrc.json
+├── .gcloudignore
+├── .gitignore
+├── app.yaml
+├── cloudbuild.yaml
+├── next.config.js
+├── package-lock.json
+├── package.json
+└── tsconfig.json
+</pre>
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
-<!-- ## 開発環境構築 -->
 
-<!-- ## トラブルシューティング -->
+## 開発環境構築
+
+- リポジトリの複製  
+`git clone https://github.com/aizufoobar/onave.git`
+
+- Volta のインストール  
+`curl https://get.volta.sh | bash`  
+
+- Node, npm の確認（package.json の "volta" に書かれたバージョンと一致するか）  
+`node --version`
+`npm --version`
+
+- 依存パッケージのインストール  
+`npm install`
+
+#### その他
+
+- SSHコミット署名の設定  
+-> "[SSHコミット署名の検証](https://docs.github.com/ja/enterprise-cloud@latest/authentication/managing-commit-signature-verification/about-commit-signature-verification)" の手順に従ってください
+- ステージングサイトの認証設定  
+-> @aizufoobarに利用するGoogleアカウントを連絡してください
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
+
+
+## トラブルシューティング
+
+[#開発環境構築](#開発環境構築)でエラー等ありましたら、@aizufoobarにご連絡ください。本セクションに記載して、悩まないREADMEになるように改善していきます。
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
+
+
+***Thank You For Reading.***
