@@ -23,5 +23,9 @@
     "eslint-config-next": "14.0.4",
     "postcss": "^8",
     "typescript": "^5"
+  },
+  "volta": {
+    "node": "20.11.0",
+    "npm": "10.2.4"
   }
 }
