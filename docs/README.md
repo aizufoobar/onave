@@ -89,7 +89,7 @@
 - SSHコミット署名の設定  
 -> "[SSHコミット署名の検証](https://docs.github.com/ja/enterprise-cloud@latest/authentication/managing-commit-signature-verification/about-commit-signature-verification)" の手順に従ってください
 - ステージングサイトの認証設定  
--> @aizufoobarに利用するGoogleアカウントを連絡してください
+-> @aizufoobar に利用するGoogleアカウントを連絡してください
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
