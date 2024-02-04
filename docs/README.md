@@ -25,6 +25,8 @@
 ## 環境
 
 <p>
+  <img src="https://img.shields.io/badge/-Node.js-black.svg?logo=node.js&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-Npm-black.svg?logo=npm&style=for-the-badge">
   <img src="https://img.shields.io/badge/-Next.js-000000.svg?logo=next.js&style=for-the-badge">
   <img src="https://img.shields.io/badge/-Typescript-black.svg?logo=typescript&style=for-the-badge">
   <img src="https://img.shields.io/badge/-App%20Engine-000000.svg?logo=google-cloud&style=for-the-badge">
