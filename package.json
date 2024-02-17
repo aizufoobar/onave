@@ -7,11 +7,11 @@
     "build": "next build",
     "start": "node .next/standalone/server.js",
     "deploy": "npm run build && gcloud app deploy",
-    "lint": "next lint --fix --dir src",
-    "lint:style": "stylelint --fix --cache 'src/**/*.scss'",
-    "format": "prettier --write src",
-    "typecheck": "tsc",
+    "lint": "next lint --fix",
+    "lint:style": "stylelint --fix --cache --cache-location 'node_modules/.cache/stylelint/' 'src/**/*.scss'",
+    "format": "prettier --write --cache src",
     "fix": "npm run format && npm run lint:style && npm run lint",
+    "typecheck": "tsc",
     "prepare": "husky"
   },
   "dependencies": {
