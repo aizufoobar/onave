@@ -11,9 +11,9 @@ handlers:
   - url: /_next/static
     static_dir: .next/static
 
-  - url: /(.*\.(gif|png|jpg|txt|svg))$
+  - url: /(.*\.(gif|png|jpg|ico|txt|svg))$
     static_files: public/\1
-    upload: public/.*\.(gif|png|jpg|svg|txt)$
+    upload: public/.*\.(gif|png|jpg|ico|svg|txt)$
 
   - url: /.*
     script: auto
@@ -22,4 +22,3 @@ handlers:
 
 env_variables:
   NODE_ENV: "production"
-  
