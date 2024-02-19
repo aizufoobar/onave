@@ -9,9 +9,9 @@ steps:
 
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
     entrypoint: bash
-    args: [-c, "gcloud app deploy"]
+    args: [-c, gcloud app deploy]
 
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
     entrypoint: bash
-    args: [-c, "gcloud app versions list --format 'value(version.id)' --sort-by '~version.id' | tail -n +3 | xargs --no-run-if-empty gcloud app versions delete --quiet"]
+    args: [-c, gcloud app versions list --format 'value(version.id)' --sort-by '~version.id' | tail -n +3 | xargs --no-run-if-empty gcloud app versions delete --quiet]
     waitFor: ['-']
