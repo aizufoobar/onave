@@ -1,7 +1,7 @@
 steps:
   - name: node
     entrypoint: npm
-    args: [ci]
+    args: [ci, --ignore-scripts]
 
   - name: node
     entrypoint: npm
