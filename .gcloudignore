@@ -4,3 +4,6 @@
 # white list
 !/.next/
 !/public/
+!/app.yaml
+!/package.json
+!/package-lock.json
