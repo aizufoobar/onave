@@ -14,8 +14,6 @@ export const Header = () => {
             Onave.
           </Link>
         </div>
-
-        <div>yay</div>
       </nav>
     </header>
   );
