@@ -4,39 +4,39 @@ title: 【バグ】
 labels: ['Type: bug']
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ***
-        #### テンプレートの説明
-        タイトルは、『◯◯が△△できない』のように **概要を示して** ください。
-        気楽にIssueを書きましょう！
-        ***
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       ***
+  #       #### テンプレートの説明
+  #       タイトルは、『◯◯が△△できない』のように **概要を示して** ください。
+  #       気楽にIssueを書きましょう！
+  #       ***
 
   - type: textarea
     attributes:
       label: バグ内容
       description: タイトルと重複しても構いません。
-      placeholder: ログインしたユーザー名がヘッダーに表示されない...等
     validations:
       required: true
 
   - type: textarea
     attributes:
       label: 期待される動作
-      placeholder: ログイン後、ヘッダーにユーザー名が表示される...等
+      value: 特になし。
 
-  - type: textarea
-    attributes:
-      label: 再現手順
-      placeholder: |
-        1. 
-        2. 
-        3. 
+  # - type: textarea
+  #   attributes:
+  #     label: 再現手順
+  #     placeholder: |
+  #       1. 
+  #       2. 
+  #       3. 
 
   - type: textarea
     attributes:
       label: その他
       description: |
         バグに関する意見、予想される原因、関連するIssueや参考資料へのリンクなど何でも記入してください。
-        Ctrl+Vやドラッグ＆ドロップでスクリーンショットを挿入できます。
+        Ctrl+Vやドラッグ&ドロップでスクリーンショットを挿入できます。
+      value: 特になし。
