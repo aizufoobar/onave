@@ -5,13 +5,16 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.quickSuggestions": {"strings": "on"},
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": false,
-  "files.associations": {"*.scss": "tailwindcss"},
+  "files.associations": {
+    "*.scss": "tailwindcss"
+  },
   "scss.validate": false,
   "stylelint.validate": [
-    "css",
     "scss"
   ],
   "tailwindCSS.emmetCompletions": true

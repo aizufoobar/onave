@@ -2,19 +2,26 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./styles/header.module.scss";
+import {Searchbar} from "./atoms/searchbar";
 
 export const Header = () => {
   return (
-    <header className={styles.wrapper}>
-      <nav className={styles.container}>
-        <div className={styles.logo}>
-          <Image src="/icon.svg" alt="Icon" width={40} height={40} />
-          <Link href="/" className={"invisible lg:visible"}>
-            Onave.
-          </Link>
+    <header className="sticky top-0 flex justify-between bg-gray-50 p-2">
+      {/* ロゴ */}
+      <Link href="/" className="flex items-center gap-1">
+        <Image src="/icon.svg" width={35} height={35} alt="" />
+        <div className="hidden text-2xl font-bold text-neutral-700 lg:inline-block">
+          Onave.
         </div>
-      </nav>
+      </Link>
+
+      {/* 検索フォーム */}
+      <Searchbar />
+
+      {/* ログインボタン */}
+      <button className="rounded-full bg-neutral-700 px-4 py-2 text-sm text-white hover:bg-red-700">
+        ログイン
+      </button>
     </header>
   );
 };
