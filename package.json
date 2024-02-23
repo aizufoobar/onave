@@ -8,7 +8,7 @@
     "start": "node .next/standalone/server.js",
     "deploy": "gcloud app deploy",
     "lint": "next lint --fix",
-    "lint:style": "stylelint --fix --cache --cache-location 'node_modules/.cache/stylelint/' 'src/**/*.scss'",
+    "stylelint": "stylelint --fix --cache --cache-location 'node_modules/.cache/stylelint/' 'src/**/*.scss'",
     "format": "prettier --write --cache src",
     "check": "npm run format && (npm run lint & npm run lint:style) && npx tsc",
     "prepare": "husky"

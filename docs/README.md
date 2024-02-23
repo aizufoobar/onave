@@ -29,6 +29,7 @@
   <img src="https://img.shields.io/badge/-Npm-black.svg?logo=npm&style=for-the-badge">
   <img src="https://img.shields.io/badge/-Next.js-000000.svg?logo=next.js&style=for-the-badge">
   <img src="https://img.shields.io/badge/-Typescript-black.svg?logo=typescript&style=for-the-badge">
+  <img src="https://img.shields.io/badge/tailwind%20css-black?logo=tailwindcss&style=for-the-badge">
   <img src="https://img.shields.io/badge/-App%20Engine-000000.svg?logo=google-cloud&style=for-the-badge">
 </p>
 
@@ -39,7 +40,13 @@
 
 ## 構成
 
-`docs`には、READMEなどのドキュメントを配置します。`public`には、静的ファイル（画像など）を配置します。静的ファイルを除くアプリの「中身」は`src`内に作成し、`app`には実際の画面を構成する page.tsx など、`components`には共通コンポーネント（画面の構成要素）、`lib`には共通ロジックを配置します。
+以下の２つのディレクトリにアプリの中身を配置します。
+
+- `public` - 画像などの静的ファイル
+- `src`
+  - `app` - page.tsx、layout.tsx など（詳しくは[こちら](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts)）
+  - `components` - 複数回使われる共通[コンポーネント](https://ja.react.dev/learn/your-first-component)
+  - `lib` - 共通ロジック
 
 ルートには各種設定ファイルが配置されます。 app.yaml はApp Engineの構成ファイルで、 cloudbuild.yaml はCloud Buildの構成ファイルです。本アプリはこの2つの構成ファイルに従い、本番・ステージング環境に展開されます。
 
@@ -47,22 +54,29 @@
 <pre>
 .
 ├──.github
+├──.husky
 ├──.vscode
-├── <span style="color: yellow;">docs</span>
+├── docs
 ├── <span style="color: yellow;">public</span>
 ├── <span style="color: yellow;">src</span>
 │   ├── app
 │   ├── components
 │   └── lib
 │
-├── .eslintrc.json
+├── .eslintrc.js
 ├── .gcloudignore
 ├── .gitignore
+├── .stylelintignore
 ├── app.yaml
 ├── cloudbuild.yaml
+├── lint-staged.config.js
 ├── next.config.js
 ├── package-lock.json
 ├── package.json
+├── postcss.config.js
+├── prettier.config.js
+├── stylelint.config.js
+├── tailwind.config.js
 └── tsconfig.json
 </pre>
 

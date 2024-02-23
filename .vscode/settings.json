@@ -11,11 +11,11 @@
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": false,
   "files.associations": {
-    "*.css": "tailwindcss"
+    "*.scss": "tailwindcss"
   },
   "scss.validate": false,
   "stylelint.validate": [
-    "css",
     "scss"
   ],
+  "tailwindCSS.emmetCompletions": true
 }
