@@ -11,11 +11,16 @@
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": false,
   "files.associations": {
-    "*.scss": "tailwindcss"
+    "*.scss": "tailwindcss",
+    ".gcloudignore": "ignore"
   },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
   "scss.validate": false,
   "stylelint.validate": [
     "scss"
   ],
-  "tailwindCSS.emmetCompletions": true
+  "tailwindCSS.emmetCompletions": true,
+  "typescript.validate.enable": true
 }
