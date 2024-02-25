@@ -1,60 +1,49 @@
 "use client";
 
-import {ArrowLeftIcon} from "@heroicons/react/24/outline";
-import Image from "next/image";
 import Link from "next/link";
 import {useState} from "react";
+import BackButton from "./parts/backbutton";
+import LoginButton from "./parts/loginbutton";
+import OnaveIcon from "./parts/onaveicon";
 import SearchBar from "./parts/searchbar";
 import SearchButton from "./parts/searchbutton";
 
 export default function Header() {
   const [isCovered, setIsCovered] = useState(false);
-  console.log(isCovered);
 
   return (
     <>
-      <header className="sticky top-0 flex items-center justify-between bg-gray-50 p-2">
+      <header className="sticky top-0 flex items-center justify-between bg-gray-50 p-2 text-neutral-700">
         {/* ロゴ */}
         <Link className="flex items-center gap-1" href="/">
-          <Image src="/icon.svg" width={40} height={40} alt="" />
-          <div className="hidden text-2xl font-bold text-neutral-700 md:inline-block">
-            Onave.
-          </div>
+          <OnaveIcon />
+          <h2 className="hidden text-2xl font-bold md:inline-block">Onave.</h2>
         </Link>
 
-        {/* 検索フォームと検索ボタン */}
-        <SearchBar
-          className="hidden md:inline-block"
-          placeholeder="Seach Onave"
-        />
+        {/* 検索フォーム(md以上) or 検索ボタン(md未満) */}
+        <SearchBar className="hidden md:inline-block" />
         <SearchButton
-          className="ml-auto mr-[5%] md:hidden"
+          className="ml-auto mr-4 md:hidden"
           onClick={() => {
             setIsCovered(true);
           }}
         />
 
-        {/* 検索ボタンを押した後のヘッダー */}
+        {/* ログインボタン */}
+        <LoginButton />
+
+        {/* 検索ボタンで現れる検索ヘッダー */}
         <header
-          className={`absolute inset-0 flex items-center justify-center bg-gray-50 ${isCovered ? "" : "hidden"}`}
+          className={`absolute inset-0 flex items-center justify-center bg-inherit p-2 ${isCovered ? "" : "hidden"}`}
         >
-          <button
-            className="absolute left-2"
+          <BackButton
+            className="absolute left-2 size-5"
             onClick={() => {
               setIsCovered(false);
             }}
-          >
-            <ArrowLeftIcon className="size-5" />
-          </button>
-          <SearchBar className="max-w-[60%]" placeholeder="Search Onave" />
+          />
+          <SearchBar className="max-w-[70%]" />
         </header>
-
-        {/* ログインボタン */}
-        <Link href="/login">
-          <button className="rounded-full bg-neutral-700 px-4 py-2 text-sm text-white hover:bg-red-700 active:bg-red-700">
-            ログイン
-          </button>
-        </Link>
       </header>
     </>
   );

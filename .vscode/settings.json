@@ -14,7 +14,6 @@
     "*.scss": "tailwindcss",
     ".gcloudignore": "ignore"
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "scss.validate": false,
@@ -22,5 +21,6 @@
     "scss"
   ],
   "tailwindCSS.emmetCompletions": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.validate.enable": true
 }

@@ -13,7 +13,7 @@ export default function SearchBar(props: Props) {
         <input
           type="search"
           className="max-w-[100%] rounded-2xl p-2 ps-8 shadow focus:outline-none"
-          placeholder={props.placeholeder}
+          placeholder={props.placeholeder ?? "Search Onave"}
         />
       </form>
     </div>
