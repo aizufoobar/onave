@@ -23,7 +23,10 @@ export default function Header() {
         </Link>
 
         {/* 検索フォームと検索ボタン */}
-        <SearchBar className="hidden md:inline-block" />
+        <SearchBar
+          className="hidden md:inline-block"
+          placeholeder="Seach Onave"
+        />
         <SearchButton
           className="ml-auto mr-[5%] md:hidden"
           onClick={() => {
@@ -43,12 +46,12 @@ export default function Header() {
           >
             <ArrowLeftIcon className="size-5" />
           </button>
-          <SearchBar className="max-w-[60%]" />
+          <SearchBar className="max-w-[60%]" placeholeder="Search Onave" />
         </header>
 
         {/* ログインボタン */}
         <Link href="/login">
-          <button className="rounded-full bg-neutral-700 px-4 py-2 text-sm text-white hover:bg-red-700">
+          <button className="rounded-full bg-neutral-700 px-4 py-2 text-sm text-white hover:bg-red-700 active:bg-red-700">
             ログイン
           </button>
         </Link>
